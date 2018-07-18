@@ -1,0 +1,19 @@
+{
+  "name": "peedo",
+  "version": "0.0.1",
+  "description": "Speedy navigation for you website and application",
+  "source": "src/index.js",
+  "main": "dist/peedo.js",
+  "umd:main": "dist/peedo.umd.js",
+  "scripts": {
+    "build": "microbundle -f cjs umd",
+    "watch": "microbundle watch --compress=false",
+    "release": "git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
+  },
+  "author": "Pedro Borges <oi@pedroborg.es> (https://pedroborg.es)",
+  "repository": "pedroborges/peedo",
+  "license": "MIT",
+  "devDependencies": {
+    "microbundle": "^0.5.1"
+  }
+}
