@@ -10,6 +10,10 @@
     "watch": "microbundle watch --compress=false",
     "release": "git commit -am $npm_package_version && git tag $npm_package_version && git push && git push --tags && npm publish"
   },
+  "files": [
+    "src",
+    "dist"
+  ],
   "author": "Pedro Borges <oi@pedroborg.es> (https://pedroborg.es)",
   "repository": "pedroborges/peedo",
   "license": "MIT",
